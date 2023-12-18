@@ -11,3 +11,115 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.bg-nav{
+  background-color: #eeeeee;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+}
+.footer{
+  margin-top: 50px;
+}
+
+/* Add this to your CSS file or use a CSS-in-JS solution */
+
+/* For category card */
+.category {
+  overflow: hidden;
+  white-space: nowrap;
+  scrollbar-width: normal;
+  scrollbar-color: red green;
+}
+
+.category .card-cat {
+  width: 140px;
+  margin-right: 10px;
+  white-space: normal;
+}
+.category::-webkit-scrollbar{
+  width: 12vw;
+}
+.category::-webkit-scrollbar-thumb{
+  background-color: blue;
+}
+.category::-webkit-scrollbar-track{
+  background-color: rgb(149, 255, 0);
+}
+
+
+.category-title {
+  font-size: 16px !important;
+}
+
+@media (max-width: 720px) {
+  .category .card-cat {
+    width: 120px;
+  }
+
+  .category-title {
+    font-size: 12px !important;
+  }
+}
+
+.category a {
+  color: #5c5d5d;
+}
+
+
+
+.card-desc-style {
+  display: '-webkit-box';
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* Add this CSS to your stylesheets or in the <style> tag of your component */
+.like-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+}
+/* YourStyles.css */
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cut-price-container {
+  text-decoration: line-through;
+  font-size: 16px;
+  color: #777; /* Adjust color as needed */
+}
+
+.new-price-container {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* Adjust color as needed */
+}
+
+/* Additional styling for the like icon */
+.like-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* YourStyles.css */
+
+/* ... (previous styles) ... */
+
+.price-container:hover {
+  transform: scale(1.1); /* Adjust the scale factor for the zoom effect */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* ... (other styles) ... */
+
