@@ -1,7 +1,7 @@
 import './App.css';
 import React, { Suspense } from 'react';
+import { Spinner } from 'react-bootstrap';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 
 
 // Containers
@@ -12,11 +12,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Suspense feedback={"Loading..."}>
+        <Suspense feedback={<Spinner animation="border" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </Spinner>}>
           <Routes>
             <Route index element={<DefaultLayout />} />
-            <Route path="login/" element={<>Login Page Here</>} />
-            <Route path="register/" element={<>Resister</>} />
             <Route path="*" element={<DefaultLayout />} />
           </Routes>
         </Suspense>
